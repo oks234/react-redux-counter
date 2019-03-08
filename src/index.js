@@ -8,9 +8,15 @@ import './sass/index.scss';
 
 import { createStore } from 'redux';
 import reducers from './reducers';
+import {Provider} from "react-redux";
 
 const store = createStore(reducers);
 
+const reactElement = (
+	<Provider store={store}>
+		<App/>
+	</Provider>
+);
 const root = document.getElementById('root');
 
-ReactDOM.render(<App />, root);
+ReactDOM.render(reactElement, root);
