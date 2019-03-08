@@ -1,5 +1,5 @@
 import React from "react";
-import CounterContainer from "../containers/CounterContainer.js";
+import CounterContainer from "../containers/CounterContainer";
 
 class App extends React.Component {
 	render() {
