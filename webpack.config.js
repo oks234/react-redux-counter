@@ -5,11 +5,11 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	mode: 'development', // 'development', 'production'
-	// entry: './src/index.js',
-	// output: {
-	// 	path: path.resolve(__dirname, 'dist'),
-	// 	filename: 'main.js'
-	// },
+	entry: './src/index.js',
+	output: {
+		path: path.resolve(__dirname, 'dist'),
+		filename: 'main.js'
+	},
 	module: {
 		rules: [
 			{
@@ -27,13 +27,19 @@ module.exports = {
 				}
 			},
 			{ // css files
-				test: /\.css$/,
+				test: /\.scss$/,
 				use: [
 					{
 						loader: 'style-loader'
 					},
 					{
 						loader: 'css-loader'
+					},
+					{
+						loader: 'sass-loader',
+						options: {
+							sourceMap: true
+						}
 					}
 				]
 			},
