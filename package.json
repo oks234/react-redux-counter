@@ -1,0 +1,27 @@
+{
+  "name": "react-redux-counter",
+  "version": "1.0.0",
+  "description": "React-Redux Practice, Create Counter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oks234/react-redux-counter.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "counter",
+    "practice",
+    "javascript",
+    "js"
+  ],
+  "author": "oks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oks234/react-redux-counter/issues"
+  },
+  "homepage": "https://github.com/oks234/react-redux-counter#readme"
+}
