@@ -2,14 +2,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App.js';
+import App from './components/App.js';
 
 import './sass/index.scss';
 
-const testFunction = () => {
-	[1, 2, 3].forEach(number => console.log(number));
-};
+const root = document.getElementById('root');
 
-testFunction();
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, root);
