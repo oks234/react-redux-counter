@@ -5,11 +5,11 @@ const htmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
 	mode: 'development', // 'development', 'production'
-	entry: './src/index.js',
-	output: {
-		path: path.resolve(__dirname, 'dist'),
-		filename: 'main.js'
-	},
+	// entry: './src/index.js',
+	// output: {
+	// 	path: path.resolve(__dirname, 'dist'),
+	// 	filename: 'main.js'
+	// },
 	module: {
 		rules: [
 			{
@@ -17,6 +17,13 @@ module.exports = {
 				use: {
 					loader: "html-loader",
 					options: {minimize: true}
+				}
+			},
+			{ // js, jsx files
+				test: /\.(m?js|jsx)$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader'
 				}
 			},
 			{ // css files
